@@ -1,0 +1,33 @@
+﻿
+@model Emp
+
+
+<h2>Generate Offer Letter</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="CandidateName">Candidate Name</label>
+        <input type="text" id="CandidateName" asp-for="Name" class="form-control" placeholder="Enter candidate's full name" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="JobTitle">Job Title</label>
+        <input type="text" id="JobTitle" asp-for="Designation" class="form-control" placeholder="Enter job title (e.g., Software Engineer)" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="JoiningDate">Joining Date</label>
+        <input type="date" id="JoiningDate" asp-for="Doj"  class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="Salary">Salary (INR)</label>
+        <input type="number" id="Salary" asp-for="salary" class="form-control" placeholder="Enter annual salary (e.g., 600000)" required />
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Generate Offer Letter</button>
+</form>
